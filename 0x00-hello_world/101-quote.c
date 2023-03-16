@@ -2,7 +2,8 @@
 #include <unistd.h>
 /**
  * main - program to output standard error
- * Return : 1
+ *
+ * Return 1 (green)
  */
 int main(void)
 {
