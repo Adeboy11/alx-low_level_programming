@@ -10,7 +10,7 @@ int main(void)
 
         for (x = 'a'; x <= 'z'; x++)
 	{
-		for (x != 'e' && x != 'q')
+		if (x != 'e' && x != 'q')
                 putchar(x);
 	}
         putchar('\n');
