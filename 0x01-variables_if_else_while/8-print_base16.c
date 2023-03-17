@@ -7,20 +7,20 @@
 int main(void)
 {
 	int n;
-        char x = 'a';
+	char x = 'a';
 
-        for (n = 0; n < 16; n++)
+	for (n = 0; n < 16; n++)
 	{
 		if (n < 10)
 		{
 			putchar(n + '0');
-		}else 
+		}
+		else
 		{
 			putchar(x);
 			x++;
 		}
 	}
-                putchar(x);
-        putchar('\n');
-        return (0);
+	putchar('\n');
+	return (0);
 }
