@@ -11,6 +11,7 @@
 int print_sign(int n)
 {
 if (n > 0)
+{
 _putchar('+');
 _putchar(',);
 _putchar(' ');
@@ -24,4 +25,5 @@ else
 _putchar('-');
 _putchar(',');
 _putchar('/');
+{
 }
