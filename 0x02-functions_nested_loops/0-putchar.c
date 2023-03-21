@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <main.h>
 
 /**
  * main - the entry point
@@ -12,9 +12,9 @@ char *str = "_putchar";
 
 while (*str)
 {
-putchar(*str);
+_putchar(*str);
 str++;
 }
-putchar('\n');
+_putchar('\n');
 return (0);
 }
