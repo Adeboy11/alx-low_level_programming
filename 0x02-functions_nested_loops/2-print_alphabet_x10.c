@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
  * print_alphabet_x10 - the entry point
@@ -15,10 +15,10 @@ while (x < 10)
 {
 for (a = 'a'; a <= 'z'; a++)
 {
-putchar(a);
+_putchar(a);
 }
 x++;
-putchar('\n');
+_putchar('\n');
 }
 return (0);
 }
