@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * add() - programs
+ * add - programs
  * Description - a program to add two values
- * @a - first variable
- * @b -second variable
+ * @a: first variable
+ * @b: second variable
  * Return: 1
  */
 

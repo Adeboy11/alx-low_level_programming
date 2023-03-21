@@ -15,12 +15,12 @@ for (h = 00; h < 24; h++)
 for (m = 00; m < 60; m++)
 if (m < 60)
 {
-putchar(h / 10 + '0');
-putchar(h % 10 + '0');
-putchar(':');
-putchar(m / 10 + '0');
-putchar(m % 10 + '0');
-putchar('\n');
+_putchar(h / 10 + '0');
+_putchar(h % 10 + '0');
+_putchar(':');
+_putchar(m / 10 + '0');
+_putchar(m % 10 + '0');
+_putchar('\n');
 }
 }
 }
