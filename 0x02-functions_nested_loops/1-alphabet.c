@@ -3,7 +3,7 @@
 /**
  * print_alphabet - to print alphabet
  * Description - a program that prints alphabet
- * Return: 0
+ * Return: void
 */
 
 void print_alphabet(void)
@@ -15,5 +15,4 @@ for (a = 'a'; a <= 'z'; a++)
 putchar(a);
 }
 putchar('\n');
-return (0);
 }
