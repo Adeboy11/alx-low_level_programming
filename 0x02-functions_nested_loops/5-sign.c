@@ -1,4 +1,4 @@
-#include <main.h>
+#include "main.h"
 
 /**
  * print_sign - the _isalpha entry point
@@ -11,9 +11,9 @@
 int print_sign(int n)
 {
 if (n > 0)
-putchar('+');
+_putchar('+');
 else if (n == 0)
-putchar('0');
+_putchar('0');
 else
-putchar('-');
+_putchar('-');
 }
