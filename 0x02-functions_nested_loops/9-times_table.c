@@ -1,4 +1,4 @@
-#include <main.h>
+#include "main.h"
 
 /**
  * times_table - times_table programe
@@ -20,23 +20,23 @@ if (v / 10 != 0)
 {
 if (r != 0)
 {
-putchar(',');
-putchar(' ');
+_putchar(',');
+_putchar(' ');
 }
-putchar(v / 10 + '0');
-putchar(v % 10 + '0');
+_putchar(v / 10 + '0');
+_putchar(v % 10 + '0');
 }
 else
 {
 if (c != 0)
 {
-putchar(' ');
-putchar(' ');
+_putchar(' ');
+_putchar(' ');
 }
-putchar (v + '0');
-putchar(',');
+_putchar (v + '0');
+_putchar(',');
 }
 }
-putchar('\n');
+_putchar('\n');
 }
 }

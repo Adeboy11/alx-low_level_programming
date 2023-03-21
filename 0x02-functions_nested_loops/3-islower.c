@@ -6,7 +6,7 @@
  * Return: 0
 */
 
-int main(void)
+int _islower(void)
 {
 char c;
 
@@ -16,5 +16,5 @@ return (1);
 }
 else
 {
-return (0);
+return (0)
 }

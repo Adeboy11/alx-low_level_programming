@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * print_last_digit - print program
  * Description - a program that print last digits
@@ -7,6 +8,6 @@
 int print_last_digit(int x)
 {
 int y = x % 10;
-putchar(y + '0');
+_putchar(y + '0');
 return (y);
 }
