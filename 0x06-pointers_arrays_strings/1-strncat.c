@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * *_strncpy - the entry functions
+ * *_strncat - the entry functions
  * Description - this program concatentes 2 string
  * @dest: a variable
  * @src: a variable
@@ -9,15 +9,33 @@
  * Return: ptr
  */
 
-char *_strncpy(char *dest, char *src, int n)
+char *_strncat(char *dest, char *src, int n)
 {
-int i;
+int i, j;
 char *ptr;
+int index;
+int count;
+int count1;
 
 ptr = dest;
-for (i = 0; i < n && src[i] != '\0'; i++)
+count = 0;
+count1 = 0;
+for (i = 0; dest[i] != '\0'; i++)
 {
-dest[i] = src[i];
+count1++;
+}
+for (j = 0; src[j] != '\0'; j++)
+{
+count++;
+}
+if (index <= count++)
+{
+if (n > 0)
+{
+dest[i] = src[index];
+n--;
+index++;
+}
 }
 return (ptr);
 }
