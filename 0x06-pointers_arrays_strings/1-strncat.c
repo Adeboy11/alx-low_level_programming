@@ -18,6 +18,7 @@ int count;
 int count1;
 
 ptr = dest;
+index = 0;
 count = 0;
 count1 = 0;
 for (i = 0; dest[i] != '\0'; i++)
