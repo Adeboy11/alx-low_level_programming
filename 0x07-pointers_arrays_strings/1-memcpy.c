@@ -16,7 +16,7 @@ char *p;
 p = dest;
 for (i = 0; i < n; i++)
 {
-dest[i] = src[i];
+*dest++ = *src++;
 }
 return (p);
 }
