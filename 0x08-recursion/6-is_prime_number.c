@@ -1,5 +1,4 @@
 #include "main.h"
-#include "_putchar.c"
 
 /**
  * is_prime - calculate if the number is prime.
@@ -9,7 +8,6 @@
  * Return: 1 if is prime, 0 otherwise.
  */
 
-int is_prime_number(int n);
 int is_prime(int n, int i)
 {
 if (n % i == 0)
@@ -25,7 +23,6 @@ else
 return (is_prime(n, i + 1));
 }
 }
-
 
 /**
  * is_prime_number - function that returns 1,
