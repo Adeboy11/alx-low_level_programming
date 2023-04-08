@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
-#include "main."
+#include "main.h"
 
 /**
  * main - multiply 2 arguments passed to it
