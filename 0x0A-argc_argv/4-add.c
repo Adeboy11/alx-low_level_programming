@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
-#include "main.h"
 
 /**
  * main - adds positive together
@@ -12,27 +11,31 @@
 
 int main(int argc, int *argv[])
 {
-	int i, j, sum = 0;
+	int i, j, a, b, sum;
+	char *lett;
 
-	if (argc < 1)
-	{
-		printf("0\n");
-		return (1);
-	}
-	else
+	sum = 0;
+	if (argc > 0)
 	{
 		for (i = 1; i < argc; i++)
 		{
-			for (j = 0; j < argv[i][j]; j++)
+			lett = argv[i];
+			while (*lett != 0)
 			{
-				if (!isdigit(argv[i][j]))
+				if (*lett < 48 || *lett > 57)
 				{
 					printf("Error\n");
 					return (1);
 				}
+				*lett++;
 			}
 			sum += atoi(argv[i]);
 		}
-		printf("%d", sum);
+		printf("%d\n", sum);
+	}
+	else
+	{
+		printf("0\n");
+		return (0);
 	}
 }
