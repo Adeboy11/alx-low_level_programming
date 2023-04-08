@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "main.h"
+#include "main."
 
 /**
  * main - multiply 2 arguments passed to it
@@ -11,13 +11,17 @@
 
 int main(int argc, int *argv[])
 {
-	int mul = 0;
+	int mul;
 
-	if (argc < 2)
+	mul = 1;
+	if (argc == 3)
+	{
+		mul = atoi(argv[1]) * atoi(argv[2]);
+		printf("%d\n", mul);
+	}
+	else
 	{
 		printf("error\n");
 		return (1);
 	}
-	mul = atoi(argv[1]) * atoi(argv[2]);
-	printf("%d\n", mul);
 }
