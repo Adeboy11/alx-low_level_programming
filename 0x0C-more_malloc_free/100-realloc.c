@@ -1,32 +1,41 @@
-#include "main.h"
-#include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
+#include "holberton.h"
 
 /**
- * simple_print_buffer - prints buffer in hexa
- * @buffer: the address of memory to print
- * @size: the size of the memory to print
+ * _realloc - function that reallocs a memory block
+ * @ptr: variable 1
+ * @old_size: variable 2
+ * @new_size: variable 3
  *
- * Return: Nothing.
+ * Return: pointer integer
  */
-void simple_print_buffer(char *buffer, unsigned int size)
-{
-	unsigned int i;
 
-	i = 0;
-	while (i < size)
+void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
+{
+	char *point;
+	unsigned int i, lower = 0;
+
+	if (new_size == old_size)
+		return (ptr);
+	if (ptr == NULL)
+		return (malloc(new_size));
+	if (new_size == 0 &&  ptr != NULL)
 	{
-		if (i % 10)
-		{
-			printf(" ");
-		}
-		if (!(i % 10) && i)
-		{
-			printf("\n");
-		}
-		printf("0x%02x", buffer[i]);
-		i++;
+		free(ptr);
+		return (NULL);
 	}
-	printf("\n");
+	if (new_size < old_size)
+		lower = new_size;
+	else
+		lower = old_size;
+	point = malloc(new_size);
+	if (point == NULL)
+		return (NULL);
+	for (i = 0; i < lower; i++)
+	{
+
+		point[i] = ((char *) ptr)[i];
+	}
+	free(ptr);
+	return (point);
 }

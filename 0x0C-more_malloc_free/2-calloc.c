@@ -2,28 +2,26 @@
 #include "main.h"
 
 /**
- * array_range - function that creates an array of integers
- * @min: variable 1
- * @max: variable 2
+ * _calloc - function that allocates memory
+ * @nmemb: variable 1
+ * @size: variable 2
  *
- * Return: pointer integer
+ * Return: pointer
  */
 
-int *array_range(int min, int max)
+void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	int *point;
-	int positions, count = 0;
+	char *point;
+	unsigned int i = 0;
 
-	if (min > max)
+	if (nmemb == 0 || size == 0)
 		return (NULL);
-	positions = (max - min) + 1;
-	point = malloc(positions * sizeof(int));
+	point = malloc(nmemb * size);
 	if (point == NULL)
 		return (NULL);
-	for (; count < positions; count++)
+	for (; i < nmemb * size; i++)
 	{
-		point[count] = min;
-		min += 1;
+		point[i] = 0;
 	}
 	return (point);
 }
