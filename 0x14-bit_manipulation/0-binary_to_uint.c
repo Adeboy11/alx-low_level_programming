@@ -18,7 +18,7 @@ unsigned int binary_to_uint(const char *b)
 	for (lent = 0; b[lent] != '\0'; lent++)
 		;
 
-	for (lent--, bin = 1; len >= 0; lent--, bin *= 2)
+	for (lent--, bin = 1; lent >= 0; lent--, bin *= 2)
 	{
 		if (b[lent] != '0' && b[lent] != '1')
 		{
@@ -30,4 +30,3 @@ unsigned int binary_to_uint(const char *b)
 			uint += bin;
 		}
 	}
-	"1-print_binary.c" 34L, 505C    
